@@ -1,0 +1,104 @@
+*{margin: 0;padding: 0;}
+html{height: 100%;}
+
+body{/* background-image: url('../img/1.jpg') ; */
+    background-color: whitesmoke;
+    background-size: cover;
+    height:100%;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 4fr 1fr ;
+    grid-template-columns: repeat(4,1fr) ;
+    /* background-position:center;
+    background-repeat: no-repeat;
+    animation: bgChange 60s infinite ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden; */
+}
+@keyframes bgChange{
+    0% {background-image: url('../img/2.jpg'),url('../img/3.jpg');}
+    10% {background-image: url('../img/3.jpg'),url('../img/4.jpg');}
+    20% {background-image: url('../img/4.jpg'),url('../img/5.jpg');}
+    35% {background-image: url('../img/5.jpg'),url('../img/6.jpg');}
+    40% {background-image: url('../img/6.jpg'),url('../img/7.jpg');}
+    50% {background-image: url('../img/7.jpg'),url('../img/8.jpg');}
+    60% {background-image: url('../img/8.jpg'),url('../img/9.jpg');}
+    70% {background-image: url('../img/9.jpg'),url('../img/10.jpg');}
+    80% {background-image: url('../img/10.jpg'),url('../img/11.jpg');}
+    90% {background-image: url('../img/11.jpg'),url('../img/1.jpg');}
+    100% {background-image: url('../img/1.jpg');}
+}
+
+@keyframes fade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#titleHead h1{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    animation: fade 3s;
+}
+#titleHead{
+    width: 100%;
+    font-size: 3em;
+    margin: auto;
+    text-align: center;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+form{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2em;
+    text-shadow: 0.5px 0.5px white;
+    border-right: 2px solid white;
+    padding: 0 0.5em;
+}
+a:last-child{border-right: none;}
+#headNav{
+    margin: auto;
+    width: 50%;
+    height: auto;
+    background: black;
+    opacity: 0.7;
+    grid-row: 2/3;
+    grid-column: 2/4;
+    text-align: center;
+}
+
+h3{
+    color: red;text-align: center;
+}
+div h3:first-of-type{color: black;text-align: center;text-decoration: underline;padding-bottom: 2em;}
+#location{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+#forecast{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+#pageFooter{
+    grid-row: 5/6;
+    grid-column: 2/4;
+    text-align: center;
+    border-top: 0.1px solid gray;
+}
+
+
+#aboutP{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    text-align:center;
+    font-size: 1.5em;
+    width: 60%;
+    margin: auto;
+}
