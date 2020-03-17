@@ -26,7 +26,7 @@ app.get('',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.render('about',{title:'Jj Specter',
                         creatorName: 'Kakau',
-                        info: 'My first app in nodejs, a weather app.If you find any bug, send an email to PeterSuce@gmail.com. You can send me suggestions on how to improve the app at the very same email.'
+                        info: 'My first app in nodejs, a weather app.If you find any bug, send an email to notAvailable@gmail.com. You can send me suggestions on how to improve the app at the very same email.'
                     });
 })
 
