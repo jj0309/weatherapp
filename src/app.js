@@ -17,7 +17,7 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(pubDir));
 
 app.get('',(req,res)=>{
-    res.render('index',{title:'Just another weather app',
+    res.render('index',{title:'Just Another Weather App',
                         creatorName: 'Kakau',
                         forecast:'Forecast',
                         location:'Location'});
